@@ -18,7 +18,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-FROM ubuntu:jammy
+FROM ubuntu:focal
 
 ARG KODI_VERSION=19.5
 
@@ -49,14 +49,17 @@ ARG KODI_EXTRA_PACKAGES=
 RUN packages="                                               \
                                                              \
     kodi=6:${KODI_VERSION}+*                                 \
-    kodi-eventclients-kodi-send                              \
+    odi-eventclients-kodi-send                              \
     kodi-game-libretro                                       \
+    kodi-game-libretro-beetle-pce-fast                       \
+    kodi-game-libretro-beetle-vb                             \
     kodi-game-libretro-beetle-wswan                          \
     kodi-game-libretro-bsnes-mercury-accuracy                \
     kodi-game-libretro-bsnes-mercury-balanced                \
     kodi-game-libretro-bsnes-mercury-performance             \
     kodi-game-libretro-desmume                               \
     kodi-game-libretro-fbalpha2012                           \
+    kodi-game-libretro-fuse                                  \
     kodi-game-libretro-gambatte                              \
     kodi-game-libretro-prboom                                \
     kodi-game-libretro-stella                                \
@@ -89,10 +92,14 @@ RUN packages="                                               \
     kodi-pvr-wmc                                             \
     kodi-pvr-zattoo                                          \
     kodi-screensaver-asteroids                               \
+    kodi-screensaver-asterwave                               \
     kodi-screensaver-biogenesis                              \
+    kodi-screensaver-cpblobs                                 \
     kodi-screensaver-greynetic                               \
+    kodi-screensaver-matrixtrails                            \
     kodi-screensaver-pingpong                                \
     kodi-screensaver-pyro                                    \
+    kodi-screensaver-stars                                   \
     locales                                                  \
     pulseaudio                                               \
     tzdata                                                   \
