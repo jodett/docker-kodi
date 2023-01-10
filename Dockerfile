@@ -28,12 +28,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 # install the team-xbmc ppa
 RUN apt-get update                                                        && \
     apt-get install -y --no-install-recommends software-properties-common && \
-    apt-get install -y --no-install-recommends gpg-agent apt-utils        && \  
+    apt-get install -y --no-install-recommends gpg-agent                  && \  
     apt-get install -y --no-install-recommends ca-certificates            && \
-    add-apt-repository ppa:team-xbmc/ppa                                  && \
-    apt-get -y purge openssl software-properties-common                   && \
-    apt-get -y --purge autoremove                                         && \
-    rm -rf /var/lib/apt/lists/*
+    add-apt-repository ppa:team-xbmc/ppa                                  
 
 ARG KODI_EXTRA_PACKAGES=
 
