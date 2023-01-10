@@ -20,7 +20,7 @@
 
 FROM ubuntu:jammy
 
-ARG KODI_VERSION=19.4
+ARG KODI_VERSION=19.5
 
 # https://github.com/ehough/docker-nfs-server/pull/3#issuecomment-387880692
 ARG DEBIAN_FRONTEND=noninteractive
@@ -48,7 +48,7 @@ ARG KODI_EXTRA_PACKAGES=
 #  - kodi-screensaver-*           additional screensavers (DEPRECATED: WILL BE REMOVED IN VERSION 4 OF THIS IMAGE)
 RUN packages="                                               \
                                                              \
-    kodi-bin=2:${KODI_VERSION}+*                                 \
+    kodi=2:${KODI_VERSION}+*                                 \
     kodi-eventclients-kodi-send                              \
     kodi-game-libretro                                       \
     kodi-game-libretro-beetle-wswan                          \
