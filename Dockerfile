@@ -52,15 +52,12 @@ RUN packages="                                               \
     kodi=2:${KODI_VERSION}+*                                 \
     kodi-eventclients-kodi-send                              \
     kodi-game-libretro                                       \
-    kodi-game-libretro-beetle-pce-fast                       \
-    kodi-game-libretro-beetle-vb                             \
     kodi-game-libretro-beetle-wswan                          \
     kodi-game-libretro-bsnes-mercury-accuracy                \
     kodi-game-libretro-bsnes-mercury-balanced                \
     kodi-game-libretro-bsnes-mercury-performance             \
     kodi-game-libretro-desmume                               \
     kodi-game-libretro-fbalpha2012                           \
-    kodi-game-libretro-fuse                                  \
     kodi-game-libretro-gambatte                              \
     kodi-game-libretro-prboom                                \
     kodi-game-libretro-stella                                \
@@ -93,14 +90,10 @@ RUN packages="                                               \
     kodi-pvr-wmc                                             \
     kodi-pvr-zattoo                                          \
     kodi-screensaver-asteroids                               \
-    kodi-screensaver-asterwave                               \
     kodi-screensaver-biogenesis                              \
-    kodi-screensaver-cpblobs                                 \
     kodi-screensaver-greynetic                               \
-    kodi-screensaver-matrixtrails                            \
     kodi-screensaver-pingpong                                \
     kodi-screensaver-pyro                                    \
-    kodi-screensaver-stars                                   \
     locales                                                  \
     pulseaudio                                               \
     tzdata                                                   \
