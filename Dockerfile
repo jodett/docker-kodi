@@ -28,7 +28,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 # install the team-xbmc ppa
 RUN apt-get update                                                        && \
     apt-get install -y --no-install-recommends software-properties-common && \
-    apt-get install -y --no-install-recommends gpg-agent                  && \    
+    apt-get install -y --no-install-recommends gpg-agent apt-utils        && \  
+    apt-get install -y --no-install-recommends ca-certificates            && \
     add-apt-repository ppa:team-xbmc/ppa                                  && \
     apt-get -y purge openssl software-properties-common                   && \
     apt-get -y --purge autoremove                                         && \
@@ -51,7 +52,6 @@ ARG KODI_EXTRA_PACKAGES=
 #  - kodi-screensaver-*           additional screensavers (DEPRECATED: WILL BE REMOVED IN VERSION 4 OF THIS IMAGE)
 RUN packages="                                               \
                                                              \
-    ca-certificates                                          \
     kodi=2:${KODI_VERSION}+*                                 \
     kodi-eventclients-kodi-send                              \
     kodi-game-libretro                                       \
