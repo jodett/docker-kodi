@@ -48,7 +48,7 @@ ARG KODI_EXTRA_PACKAGES=
 #  - kodi-screensaver-*           additional screensavers (DEPRECATED: WILL BE REMOVED IN VERSION 4 OF THIS IMAGE)
 RUN packages="                                               \
                                                              \
-    kodi=2:${KODI_VERSION}+*                                 \
+    kodi=6:${KODI_VERSION}+*                                 \
     kodi-eventclients-kodi-send                              \
     kodi-game-libretro                                       \
     kodi-game-libretro-beetle-wswan                          \
